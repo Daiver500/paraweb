@@ -1,0 +1,31 @@
+ .container {           // 1920
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @include vp-1919 {    // 1366-1919
+    max-width: 1200px;
+    padding: 0 40px;
+  }
+
+  @include vp-1365 {    // 1024-1365
+    max-width: 900px;
+    padding: 0 25px;
+  }
+
+  @include vp-1023 {   // 768-1023
+    padding: 0 59px;
+  }
+
+  @include vp-767 {    // 375-767
+    padding: 0 24px;
+  }
+}
+
+.container--catalog {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
