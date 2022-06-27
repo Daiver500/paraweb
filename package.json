@@ -1,8 +1,8 @@
 {
-  "name": "wispo",
+  "name": "paraweb",
   "version": "19.0.0",
   "private": true,
-  "description": "wispo",
+  "description": "paraweb",
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
@@ -54,7 +54,6 @@
     "node": "14.17.5"
   },
   "dependencies": {
-    "imask": "^6.4.2",
     "swiper": "^8.2.2"
   }
 }
