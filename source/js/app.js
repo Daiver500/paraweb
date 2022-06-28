@@ -1,8 +1,12 @@
 import '../js/index';
 import '../js/swiper';
-import {workersSlider} from './workers-slider';
+import {introSlider} from './intro-slider';
+import {createCards} from './create-cards';
+import {initHeader} from './header';
 
 window.addEventListener('DOMContentLoaded', () => {
-  workersSlider();
+  introSlider();
+  createCards();
+  initHeader();
 });
 
