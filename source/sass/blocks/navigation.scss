@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+}
+
+.navigation__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+
+  @include vp-767 {
+    grid-template-columns: max-content max-content;
+  }
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 40px;
+
+  @include vp-767 {
+    margin-right: 16px;
+  }
+}
+
+.navigation__link {
+  color: $color-grey;
+}
+
+.navigation__link svg {
+  display: none;
+
+  @include vp-767 {
+    display: flex;
+  }
+}
+
+.navigation__link span {
+  @include vp-767 {
+    display: none;
+  }
+}
