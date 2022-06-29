@@ -8,7 +8,7 @@ const introSlider = () => {
 
     swiper = new Swiper('.intro-slider', {
       grabCursor: true,
-      spaceBetween: 18,
+      spaceBetween: 0,
       // centeredSlides: true,
       pagination: {
         el: ('.swiper-pagination'),

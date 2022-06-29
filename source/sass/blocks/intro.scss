@@ -2,4 +2,58 @@
   background-image: linear-gradient(90deg, $color-navy-blue-2 -90.99%,$color-navy-blue);
   height: 100%;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro__inner {
+  display: flex;
+  position: relative;
+}
+
+.intro__image {
+  position: relative;
+  width: 47%;
+  min-height: 546px;
+
+  @include vp-1023 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  @include vp-767 {
+    min-height: 365px;
+  }
+}
+
+.intro__image img {
+  position: absolute;
+  left: 20px;
+  object-fit: fill;
+  width: 120%;
+
+  @include vp-1023 {
+    height: 90%;
+    left: unset;
+    right: -20px;
+    width: 78%;
+  }
+
+  @include vp-767 {
+    height: 60%;
+    width: 63%;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1070px) {
+  .intro__image {
+    width: 39%;
+  }
+
+  .intro__image img {
+    left: 0;
+    width: 180%;
+  }
 }
