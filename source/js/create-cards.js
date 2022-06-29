@@ -34,7 +34,7 @@ const createCards = () => {
       createCard(item);
     });
     const cardsToHide = document.querySelectorAll('.article-item:nth-child(n+7)');
-    cardsToHide .forEach((item) => {
+    cardsToHide.forEach((item) => {
       item.classList.add('is-hidden');
     });
   };
@@ -52,7 +52,6 @@ const createCards = () => {
 
   const loadButton = document.querySelector('.articles__button');
   loadButton.addEventListener('click', showCards);
-
 };
 
 export {createCards};
